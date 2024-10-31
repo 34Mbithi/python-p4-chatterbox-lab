@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from datetime import datetime
 
 from app import app
@@ -19,7 +20,6 @@ class TestMessage:
     def test_has_correct_columns(self):
         '''has columns for message body, username, and creation time.'''
         with app.app_context():
-
             hello_from_liza = Message(
                 body="Hello 👋",
                 username="Liza")
